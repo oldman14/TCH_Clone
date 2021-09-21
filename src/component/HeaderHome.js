@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {
+  Image,
   Platform,
   SafeAreaView,
   StatusBar,
@@ -16,20 +17,28 @@ import Animated, {
 } from 'react-native-reanimated';
 import {COLORS, SIZES} from '../constants';
 
-const Header = props => {
+const HeaderHome = props => {
   const {title} = props;
-  const offset = useSharedValue(1);
+  const offset = useSharedValue(-40);
+  const op = useSharedValue(0);
   const animatedStyles = useAnimatedStyle(() => {
     return {
-      transform: [{translateX: offset.value * 50}],
+      transform: [{translateX: offset.value}],
     };
   });
-  console.log(offset.value);
-  console.log(title);
+  const animatedStylesImage = useAnimatedStyle(() => {
+    return {
+      opacity: op.value,
+    };
+  });
   useEffect(() => {
     offset.value = withTiming(0, {
-      duration: 1000,
-      easing: Easing.out(Easing.exp),
+      duration: 500,
+      easing: Easing.in(Easing.sin),
+    });
+    op.value = withTiming(1, {
+      duration: 500,
+      easing: Easing.in(Easing.exp),
     });
   });
   const HeaderIos = () => {
@@ -38,12 +47,14 @@ const Header = props => {
         <SafeAreaView>
           <View style={{height: SIZES.statusBar_Height}}></View>
           <Animated.View
-            style={[
-              {height: SIZES.header_Height},
-              styles.conatainer,
-              animatedStyles,
-            ]}>
-            <Animated.Text style={styles.title}>{title}</Animated.Text>
+            style={[{height: SIZES.header_Height}, styles.conatainer]}>
+            <Animated.Image
+              style={[styles.image, animatedStylesImage]}
+              source={require('../assets/images/icons8-night-100.png')}
+            />
+            <Animated.Text style={[styles.title, animatedStyles]}>
+              Chào buổi tối, Ngô Hoàng Thái
+            </Animated.Text>
           </Animated.View>
         </SafeAreaView>
       </View>
@@ -66,18 +77,25 @@ const Header = props => {
   );
 };
 
-export default Header;
+export default HeaderHome;
 
 const styles = StyleSheet.create({
   conatainer: {
+    flexDirection: 'row',
     height: 44,
     width: SIZES.width,
     backgroundColor: '#fff',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
   title: {
-    fontSize: SIZES.h2,
+    fontSize: SIZES.body4,
     fontWeight: 'bold',
-    paddingLeft: 15,
+    alignSelf: 'center',
+  },
+  image: {
+    width: 35,
+    height: 35,
+    alignSelf: 'center',
+    marginHorizontal: 15,
   },
 });
