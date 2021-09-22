@@ -1,14 +1,21 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
-import AppStack from './AppStack'
-
+import React, {useEffect} from 'react';
+import {View, Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import AppStack from './AppStack';
+import {fetchData, productActions} from '../screen/Order/porductSlice';
+import {useDispatch, useSelector} from 'react-redux';
 const Routes = () => {
-    return (
-        <NavigationContainer>
-            <AppStack/>
-      </NavigationContainer>
-    )
-}
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchData());
+  }, []);
+  const data = useSelector(state => state.product);
+  console.log('data', data);
+  return (
+    <NavigationContainer>
+      <AppStack />
+    </NavigationContainer>
+  );
+};
 
-export default Routes
+export default Routes;

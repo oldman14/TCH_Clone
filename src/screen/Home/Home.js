@@ -7,6 +7,7 @@ import {
   StatusBar,
   StyleSheet,
   ScrollView,
+  Pressable,
 } from 'react-native';
 import Animated, {
   useAnimatedStyle,
@@ -18,23 +19,19 @@ import Animated, {
 import Header from '../../component/Header';
 import BottomSheet, {BottomSheetScrollView} from '@gorhom/bottom-sheet';
 import HeaderHome from '../../component/HeaderHome';
-
+import {decrement, increment, selectCount} from './counterSlice';
+import {useDispatch, useSelector} from 'react-redux';
 const Home = options => {
   const width = useSharedValue(50);
-
-  const style = useAnimatedStyle(() => {
-    return {
-      width: withTiming(width.value, {
-        duration: 500,
-        easing: Easing.bezier(0.25, 0.1, 0.25, 1),
-      }),
-    };
-  });
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
+  console.log(count);
   return (
     <View>
       <HeaderHome title="Home" />
-      <Animated.View style={[styles.box, style]} />
-      <Button onPress={() => (width.value = Math.random() * 300)} title="Hey" />
+      <Button title="Increment" onPress={() => dispatch(increment())} />
+      <Button title="Decrement" onPress={() => dispatch(decrement())} />
+      <Text>{count} </Text>
     </View>
   );
 };

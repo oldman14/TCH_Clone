@@ -68,7 +68,16 @@ const HeaderHome = props => {
           backgroundColor={COLORS.white}
           barStyle="dark-content"
         />
-        <Text style={styles.title}>{title}</Text>
+        <Animated.View
+          style={[{height: SIZES.header_Height}, styles.conatainer]}>
+          <Animated.Image
+            style={[styles.image, animatedStylesImage]}
+            source={require('../assets/images/icons8-night-100.png')}
+          />
+          <Animated.Text style={[styles.title, animatedStyles]}>
+            Chào buổi tối, Ngô Hoàng Thái
+          </Animated.Text>
+        </Animated.View>
       </View>
     );
   };

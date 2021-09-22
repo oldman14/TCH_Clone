@@ -18,7 +18,6 @@ const MyBackButton = () => {
   );
 };
 const HomeStack = props => {
-  console.log(props);
   return (
     <Stack.Navigator
       screenOptions={{

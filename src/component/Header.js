@@ -57,7 +57,14 @@ const Header = props => {
           backgroundColor={COLORS.white}
           barStyle="dark-content"
         />
-        <Text style={styles.title}>{title}</Text>
+        <Animated.View
+          style={[
+            {height: SIZES.header_Height},
+            styles.conatainer,
+            animatedStyles,
+          ]}>
+          <Animated.Text style={styles.title}>{title}</Animated.Text>
+        </Animated.View>
       </View>
     );
   };
