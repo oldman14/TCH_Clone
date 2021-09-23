@@ -45,7 +45,10 @@ const HeaderHome = props => {
     return (
       <View style={{backgroundColor: '#fff'}}>
         <SafeAreaView>
-          <View style={{height: SIZES.statusBar_Height}}></View>
+          <View
+            style={{
+              height: SIZES.statusBar_Height,
+            }}></View>
           <Animated.View
             style={[{height: SIZES.header_Height}, styles.conatainer]}>
             <Animated.Image
