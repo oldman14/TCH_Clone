@@ -13,7 +13,6 @@ const productSlice = createSlice({
     failed() {},
   },
 });
-console.log(productSlice);
 export const {fetchData, setData} = productSlice.actions;
 //Action
 

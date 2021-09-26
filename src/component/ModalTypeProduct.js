@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const Store = () => {
+const ModalTypeProduct = () => {
   return (
     <View>
       <Text></Text>
@@ -9,4 +9,4 @@ const Store = () => {
   );
 };
 
-export default Store;
+export default ModalTypeProduct;

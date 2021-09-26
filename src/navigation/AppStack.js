@@ -62,7 +62,7 @@ const OrderStack = () => {
         },
       }}>
       <Stack.Screen
-        options={{headerTransparent: true}}
+        options={{headerShown: false}}
         name="Order"
         component={Order}
       />
@@ -148,7 +148,7 @@ const AppStack = () => {
             <MaterialCommunityIcons
               name="home-outline"
               style={{
-                color: focused ? COLORS.primary : COLORS.darkgray,
+                color: focused ? COLORS.primary : COLORS.iconBottom,
               }}
               size={26}
             />
@@ -164,7 +164,7 @@ const AppStack = () => {
             <MaterialCommunityIcons
               name="coffee-outline"
               style={{
-                color: focused ? COLORS.primary : COLORS.darkgray,
+                color: focused ? COLORS.primary : COLORS.iconBottom,
               }}
               size={26}
             />
@@ -180,7 +180,7 @@ const AppStack = () => {
             <MaterialCommunityIcons
               name="storefront-outline"
               style={{
-                color: focused ? COLORS.primary : COLORS.darkgray,
+                color: focused ? COLORS.primary : COLORS.iconBottom,
               }}
               size={26}
             />
@@ -196,7 +196,7 @@ const AppStack = () => {
             <MaterialCommunityIcons
               name="ticket-outline"
               style={{
-                color: focused ? COLORS.primary : COLORS.darkgray,
+                color: focused ? COLORS.primary : COLORS.iconBottom,
               }}
               size={26}
             />
@@ -212,7 +212,7 @@ const AppStack = () => {
             <MaterialCommunityIcons
               name="format-list-bulleted-square"
               style={{
-                color: focused ? COLORS.primary : COLORS.darkgray,
+                color: focused ? COLORS.primary : COLORS.iconBottom,
               }}
               size={26}
             />

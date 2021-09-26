@@ -7,11 +7,13 @@ export const COLORS = {
   // base colors
   primary: '#f78c2c', // orange
   secondary: '#CDCDD2', // gray
-  
+
   // colors
   black: '#1E1F20',
   white: '#FFFFFF',
-
+  background: '#f5f5f5',
+  backgroundSection: '#e3e3e3',
+  iconBottom: '#656565',
   lightGray: '#F5F5F6',
   lightGray2: '#F6F6F7',
   lightGray3: '#EFEFF1',
@@ -43,8 +45,8 @@ export const SIZES = {
   // app dimensions
   width,
   height,
-  statusBar_Height, 
-  header_Height
+  statusBar_Height,
+  header_Height,
 };
 
 export const FONTS = {
