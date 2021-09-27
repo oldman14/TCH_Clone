@@ -74,15 +74,22 @@ const HeaderHome = props => {
           backgroundColor={COLORS.white}
           barStyle="dark-content"
         />
+        <View
+          style={{
+            height: SIZES.statusBar_Height,
+          }}></View>
         <Animated.View
           style={[{height: SIZES.header_Height}, styles.conatainer]}>
           <Animated.Image
             style={[styles.image, animatedStylesImage]}
-            source={require('../assets/images/icons8-night-100.png')}
+            source={require('../assets/images/Delivery2.png')}
           />
-          <Animated.Text style={[styles.title, animatedStyles]}>
-            Chào buổi tối, Ngô Hoàng Thái
-          </Animated.Text>
+          <View style={styles.addressContainer}>
+            <Text style={styles.addressTitle}>Giao đến</Text>
+            <Text style={styles.addressDetail}>
+              71/4/3 Lê Thị Nho, Phường Trung Mỹ Tây, Quận 12
+            </Text>
+          </View>
         </Animated.View>
       </View>
     );

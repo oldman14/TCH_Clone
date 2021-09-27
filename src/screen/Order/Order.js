@@ -1,19 +1,17 @@
-import React, {useEffect, useState, useRef, useCallback, useMemo} from 'react';
-import {View, Text, Image, SectionList, Animated} from 'react-native';
+import {
+  BottomSheetBackdrop,
+  BottomSheetModal,
+  BottomSheetModalProvider,
+  bottomSheetModalRef,
+} from '@gorhom/bottom-sheet';
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {Animated, Image, Text, View} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import {useDispatch, useSelector} from 'react-redux';
 import HeaderOrder from '../../component/HeaderOrder';
-import {styles} from '../Order/Style';
-import {fetchData, productActions} from '../Order/porductSlice';
-import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
-import BottomSheet, {
-  BottomSheetModalProvider,
-  useBottomSheet,
-  bottomSheetModalRef,
-  BottomSheetModal,
-  BottomSheetBackdrop,
-} from '@gorhom/bottom-sheet';
 import {COLORS} from '../../constants';
-import Content from '../Store/Content';
+import {fetchData} from '../Order/porductSlice';
+import {styles} from '../Order/Style';
 import ListProduce from './ListProduce';
 
 const Order = () => {
@@ -71,44 +69,6 @@ const Order = () => {
       }),
     );
   }
-  const items = [
-    {
-      title: 'Long Hongdae Nights',
-      description:
-        'Korean fried chicken glazed with Gochujang, garnished with sesame & spring onions, served with fries & Miss Miu Mayo',
-      price: '26 CHF',
-    },
-    {
-      title: 'Late Sunset',
-      description:
-        'Korean fried chicken starter with dirty cheese sauce and Artisan Hot Sauce - the naughty version new, favourite',
-      price: '13.50 CHF',
-    },
-    {
-      title: 'Cabbage Kimchi',
-      description: 'Portion, vegan',
-      price: '5.00 CHF',
-    },
-    {
-      title: 'Namur by Pieces',
-      description:
-        'Homemade steamed dim sum with minced pork, shiitake mushrooms and smokey honey flavour, four pcs',
-      price: '10.50 CHF',
-    },
-    {
-      title: 'Silim Lights',
-      description:
-        'Beef Bibimbap, sesame oil, rice, beans, spinach, carrots, spring onions, Chinese cabbage, shiitake mushrooms, roasted onions and egg',
-      price: '26.50 CHF',
-    },
-  ];
-
-  const menu = [
-    {name: 'Starters', items},
-    {name: 'Order Again', items},
-    {name: 'Picked for you', items},
-    {name: 'Gimbap Sushi', items},
-  ];
   useEffect(() => {
     if (tabs != undefined) {
       tabs?.map((val, i) => {
@@ -134,8 +94,7 @@ const Order = () => {
   );
 
   console.log(dataTransformed);
-  // setmenu(dataTransformed);
-  // setmenu(DATA);
+  console.log(typeProduct);
   const HeaderSection = () => {
     return (
       <View style={styles.headerContainer}>
@@ -143,7 +102,9 @@ const Order = () => {
           <TouchableOpacity
             onPress={handlePresentModalPress}
             style={styles.typeProduct}>
-            <Text>{typeProduct}</Text>
+            <Text style={styles.typeText}>
+              {typeProduct ? typeProduct : `Thực đơn`}
+            </Text>
             <Image
               style={styles.typeImage}
               source={require('../../assets/images/expand-arrow.png')}
@@ -217,33 +178,9 @@ const Order = () => {
       <BottomSheetModalProvider>
         <HeaderOrder />
         <HeaderSection />
-        {/* {dataTransformed != undefined ? (
-          <Animated.SectionList
-            sections={dataTransformed}
-            keyExtractor={(item, index) => item + index}
-            renderItem={({item}) => <Item title={item} />}
-            renderSectionHeader={({section}) => {
-              return (
-                <Text style={styles.headerSectionlist}>{section.title}</Text>
-              );
-            }}
-            contentContainerStyle={{margin: 15}}
-            onScroll={Animated.event(
-              [{nativeEvent: {contentOffset: {y: scrollY}}}],
-              {useNativeDriver: false},
-            )}
-            stickySectionHeadersEnabled={false}
-          />
-        ) : (
-          <View />
-        )} */}
         <Animated.ScrollView
           contentContainerStyle={{margin: 10}}
           contentOffset={{x: 0, y: 0}}
-          // onScroll={Animated.event(
-          //   [{nativeEvent: {contentOffset: {x: scrollX, y: scrollY}}}],
-          //   {useNativeDriver: false},
-          // )}
           onScroll={event =>
             setscollYCurrent(event.nativeEvent.contentOffset.y)
           }

@@ -16,8 +16,8 @@ const ListProduce = ({onMeasurement, data}) => {
             return onMeasurement(index, {name, anchor: anchor - 60});
           }}>
           <Text style={styles.headerSectionlist}>{name}</Text>
-          {menuItems.map(({title, description, price, thumbnail}, j) => (
-            <Animated.View style={styles.item}>
+          {menuItems.map(({id, description, price, thumbnail, name}, j) => (
+            <Animated.View style={styles.item} key={id}>
               <View style={{flex: 8, justifyContent: 'space-between'}}>
                 <Text numberOfLines={1} style={styles.itemTitle}>
                   {name}

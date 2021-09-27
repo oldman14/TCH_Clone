@@ -1,10 +1,17 @@
-import React, {useRef, useEffect} from 'react';
-import {StyleSheet, View, Image, Text, FlatList, Animated} from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+import React, {useEffect, useRef, useState} from 'react';
+import {Animated, Image, Text, TouchableOpacity, View} from 'react-native';
 import HeaderHome from '../../component/HeaderHome';
 import {SIZES} from '../../constants';
+import {fetchNewfeeds} from './newfeedSlice';
 import {styles} from './Styles';
-const Home = () => {
+import {useDispatch, useSelector} from 'react-redux';
+import {greaterOrEq} from 'react-native-reanimated';
+import {dataNewfeed} from './data';
+import {FlatList} from 'react-native-gesture-handler';
+const Home = ({navigation}) => {
+  const dispatch = useDispatch();
+  const [selectNewfeed, setSelectNewfeed] = useState(0);
+  const [listNewfeed, setlistNewfeed] = useState();
   const dataBanner = [
     {
       id: 1,
@@ -39,7 +46,10 @@ const Home = () => {
   //   }, 2000);
   //   refFlatlist.scrollToOffset({animated: true, offset: scrollValue});
   // };
-
+  // useEffect(() => {
+  //   dispatch(fetchNewfeeds());
+  // }, []);
+  const newfeedsData = useSelector(state => state.newfeeds);
   const scrollX = useRef(new Animated.Value(0)).current;
   let position = Animated.divide(scrollX, SIZES.width);
   const DeliveryView = () => {
@@ -63,9 +73,7 @@ const Home = () => {
       </View>
     );
   };
-  console.log(scrollX);
   const Paginator = ({scrollX}) => {
-    console.log('scrollX', scrollX);
     return (
       <View style={{flexDirection: 'row', justifyContent: 'center'}}>
         {dataBanner.map((_, i) => {
@@ -93,7 +101,6 @@ const Home = () => {
   };
   const Banner = () => {
     const carousel = ({index, item}) => {
-      console.log(item);
       return (
         <View
           style={{
@@ -145,12 +152,82 @@ const Home = () => {
       </View>
     );
   };
+  const HeaderNewfeed = () => {
+    return (
+      <View style={styles.headerNewfeedContainer}>
+        <View>
+          <Text style={styles.newfeedTitle}>Khám phá thêm</Text>
+        </View>
+        <View style={styles.headerNewfeedTitleContainer}>
+          {dataNewfeed.map((val, index) => {
+            return (
+              <TouchableOpacity
+                style={[
+                  styles.headerNewfeedTouch,
+                  selectNewfeed === index && styles.headerNewfeedTouchSelected,
+                ]}
+                onPress={() => setSelectNewfeed(index)}>
+                <Text
+                  style={[
+                    styles.headerNewfeedTitle,
+                    selectNewfeed === index &&
+                      styles.headerNewfeedTitleSelected,
+                  ]}>
+                  {val.name}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      </View>
+    );
+  };
+  const Newfeed = () => {
+    let book = [];
+    if (dataNewfeed) {
+      let listNewfeed = dataNewfeed.filter(
+        (item, index) => index == selectNewfeed,
+      );
+      book = listNewfeed[0].posts;
+    }
+    const renderItemNewfeed = ({item}) => {
+      return (
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Newfeed', {item})}
+          style={styles.itemNewfeedContainer}>
+          <Image
+            source={{uri: item.thumbnail}}
+            style={styles.imageItemNewfeed}
+          />
+          <Text style={styles.titleItemNewfeed}>{item.title}</Text>
+          <View style={{flexDirection: 'row'}}>
+            <Image
+              source={require('../../assets/images/calendar.png')}
+              style={styles.imageTimeItemNewfeed}
+            />
+            <Text style={styles.textTimeItemNewfeed}>22/9</Text>
+          </View>
+        </TouchableOpacity>
+      );
+    };
+    return (
+      <FlatList
+        data={book}
+        renderItem={renderItemNewfeed}
+        keyExtractor={item => item.id}
+        numColumns={2}
+        contentContainerStyle={{paddingHorizontal: 5}}
+      />
+    );
+  };
   return (
     <View style={styles.container}>
       <HeaderHome title="Home" />
       <DeliveryView />
       <Banner />
       <Paginator scrollX={scrollX} />
+      <HeaderNewfeed />
+      <Newfeed />
     </View>
   );
 };

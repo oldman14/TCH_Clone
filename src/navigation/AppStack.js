@@ -7,6 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {COLORS} from '../constants/index';
 import {getHeaderTitle} from '@react-navigation/elements';
 import Header from '../component/Header';
+import Newfeeds from '../screen/Home/Newfeeds';
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -17,7 +18,13 @@ const MyBackButton = () => {
     </View>
   );
 };
-const HomeStack = props => {
+const HomeStack = ({navigation, route}) => {
+  console.log('Lg navigation', route);
+  if (route.name && route.name != 'Home') {
+    navigation.setOptions({tabBarVisible: false});
+  } else {
+    navigation.setOptions({tabBarVisible: true});
+  }
   return (
     <Stack.Navigator
       screenOptions={{
@@ -40,6 +47,7 @@ const HomeStack = props => {
         name="Home"
         component={Home}
       />
+      <Stack.Screen name="Newfeed" component={Newfeeds} />
     </Stack.Navigator>
   );
 };

@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		50DE68F4ACE7FFC017BEAA17 /* libPods-TCH_Clone-TCH_CloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA436E1F682147B4B08FB65D /* libPods-TCH_Clone-TCH_CloneTests.a */; };
+		35F48375251E8F43A619169B /* libPods-TCH_Clone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BA0C4E97D7A5FD31845C1 /* libPods-TCH_Clone.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E0BB15F5DEBC1B34C31BEA79 /* libPods-TCH_Clone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F690CD665D77E7EA918BC1 /* libPods-TCH_Clone.a */; };
+		ED3A1B450585F83B52E138AA /* libPods-TCH_Clone-TCH_CloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C244DA62068ACC8A42DA09FB /* libPods-TCH_Clone-TCH_CloneTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TCH_Clone/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCH_Clone/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TCH_Clone/main.m; sourceTree = "<group>"; };
-		20A174D6CE9F5BCB70037440 /* Pods-TCH_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone.debug.xcconfig"; path = "Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone.debug.xcconfig"; sourceTree = "<group>"; };
-		61BFE3CA2BAA8E287EB1FE67 /* Pods-TCH_Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone.release.xcconfig"; path = "Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone.release.xcconfig"; sourceTree = "<group>"; };
-		6B2EA23CC5B8D6E0E126C134 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		171E70D575FC08C6680ECFB5 /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone-TCH_CloneTests.release.xcconfig"; path = "Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FAA2859B4C7B5197799B086 /* Pods-TCH_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone.debug.xcconfig"; path = "Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4342403F2CB9AEAA4757E0 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TCH_Clone/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C6F690CD665D77E7EA918BC1 /* libPods-TCH_Clone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCH_Clone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5BA0C4E97D7A5FD31845C1 /* libPods-TCH_Clone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCH_Clone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07C1D009D64FFE3E3123C32 /* Pods-TCH_Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone.release.xcconfig"; path = "Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone.release.xcconfig"; sourceTree = "<group>"; };
+		C244DA62068ACC8A42DA09FB /* libPods-TCH_Clone-TCH_CloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCH_Clone-TCH_CloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F1DC91C76AA8DF2CA24AA98F /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCH_Clone-TCH_CloneTests.release.xcconfig"; path = "Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests.release.xcconfig"; sourceTree = "<group>"; };
-		FA436E1F682147B4B08FB65D /* libPods-TCH_Clone-TCH_CloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCH_Clone-TCH_CloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DE68F4ACE7FFC017BEAA17 /* libPods-TCH_Clone-TCH_CloneTests.a in Frameworks */,
+				ED3A1B450585F83B52E138AA /* libPods-TCH_Clone-TCH_CloneTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0BB15F5DEBC1B34C31BEA79 /* libPods-TCH_Clone.a in Frameworks */,
+				35F48375251E8F43A619169B /* libPods-TCH_Clone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,20 +100,21 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C6F690CD665D77E7EA918BC1 /* libPods-TCH_Clone.a */,
-				FA436E1F682147B4B08FB65D /* libPods-TCH_Clone-TCH_CloneTests.a */,
+				BB5BA0C4E97D7A5FD31845C1 /* libPods-TCH_Clone.a */,
+				C244DA62068ACC8A42DA09FB /* libPods-TCH_Clone-TCH_CloneTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5AC84E7370C4F4506AE1E3E8 /* Pods */ = {
+		637FABA577B1B425BD5BEE33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				20A174D6CE9F5BCB70037440 /* Pods-TCH_Clone.debug.xcconfig */,
-				61BFE3CA2BAA8E287EB1FE67 /* Pods-TCH_Clone.release.xcconfig */,
-				6B2EA23CC5B8D6E0E126C134 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */,
-				F1DC91C76AA8DF2CA24AA98F /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */,
+				3FAA2859B4C7B5197799B086 /* Pods-TCH_Clone.debug.xcconfig */,
+				C07C1D009D64FFE3E3123C32 /* Pods-TCH_Clone.release.xcconfig */,
+				5B4342403F2CB9AEAA4757E0 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */,
+				171E70D575FC08C6680ECFB5 /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,7 +133,7 @@
 				00E356EF1AD99517003FC87E /* TCH_CloneTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				5AC84E7370C4F4506AE1E3E8 /* Pods */,
+				637FABA577B1B425BD5BEE33 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -155,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TCH_CloneTests" */;
 			buildPhases = (
-				844A1000B73F3E521520AAB6 /* [CP] Check Pods Manifest.lock */,
+				EB68FC1F70E9951CA1776701 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				CE69CBFEEB8CAB26D5B4AF02 /* [CP] Embed Pods Frameworks */,
-				4ADA5244D65766AD9E28D22C /* [CP] Copy Pods Resources */,
+				E9072B86C360E65E8796A796 /* [CP] Embed Pods Frameworks */,
+				8406FF068C50E79DA6518F05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TCH_Clone" */;
 			buildPhases = (
-				36DEB8CAA707FC0F965E8CBB /* [CP] Check Pods Manifest.lock */,
+				981066B8B565B56908E34A32 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				DD3B6628D9BBFBF7DBA0819A /* [CP] Embed Pods Frameworks */,
-				F33CE4824675574893A4421D /* [CP] Copy Pods Resources */,
+				5A104AF7A32B57D38A15C980 /* [CP] Embed Pods Frameworks */,
+				43002DAE764FB58C99556C79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,7 +265,58 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		36DEB8CAA707FC0F965E8CBB /* [CP] Check Pods Manifest.lock */ = {
+		43002DAE764FB58C99556C79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A104AF7A32B57D38A15C980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8406FF068C50E79DA6518F05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981066B8B565B56908E34A32 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,24 +338,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4ADA5244D65766AD9E28D22C /* [CP] Copy Pods Resources */ = {
+		E9072B86C360E65E8796A796 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		844A1000B73F3E521520AAB6 /* [CP] Check Pods Manifest.lock */ = {
+		EB68FC1F70E9951CA1776701 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,57 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE69CBFEEB8CAB26D5B4AF02 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone-TCH_CloneTests/Pods-TCH_Clone-TCH_CloneTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD3B6628D9BBFBF7DBA0819A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F33CE4824675574893A4421D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCH_Clone/Pods-TCH_Clone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -428,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B2EA23CC5B8D6E0E126C134 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */;
+			baseConfigurationReference = 5B4342403F2CB9AEAA4757E0 /* Pods-TCH_Clone-TCH_CloneTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -455,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1DC91C76AA8DF2CA24AA98F /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */;
+			baseConfigurationReference = 171E70D575FC08C6680ECFB5 /* Pods-TCH_Clone-TCH_CloneTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -479,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20A174D6CE9F5BCB70037440 /* Pods-TCH_Clone.debug.xcconfig */;
+			baseConfigurationReference = 3FAA2859B4C7B5197799B086 /* Pods-TCH_Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -505,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61BFE3CA2BAA8E287EB1FE67 /* Pods-TCH_Clone.release.xcconfig */;
+			baseConfigurationReference = C07C1D009D64FFE3E3123C32 /* Pods-TCH_Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

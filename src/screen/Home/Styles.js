@@ -3,7 +3,6 @@ import {COLORS, SIZES} from '../../constants';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: COLORS.white,
   },
   deliveryContainer: {
@@ -36,5 +35,60 @@ export const styles = StyleSheet.create({
   deliveryText: {
     alignSelf: 'center',
     fontSize: SIZES.body4,
+  },
+  headerNewfeedContainer: {
+    flexDirection: 'column',
+    padding: 10,
+  },
+  headerNewfeedTitleContainer: {
+    flexDirection: 'row',
+    padding: 5,
+  },
+  headerNewfeedTitle: {
+    fontSize: SIZES.body4,
+    fontWeight: '500',
+  },
+  headerNewfeedTitleSelected: {
+    paddingHorizontal: 3,
+    fontSize: SIZES.body4,
+    fontWeight: '500',
+    color: COLORS.primary,
+  },
+  headerNewfeedTouch: {
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+  },
+  headerNewfeedTouchSelected: {
+    backgroundColor: COLORS.lightGray3,
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+    borderRadius: 15,
+  },
+  newfeedTitle: {
+    fontSize: SIZES.h2,
+    padding: 5,
+    fontWeight: '500',
+  },
+  itemNewfeedContainer: {
+    flex: 1,
+    paddingLeft: 8,
+    paddingRight: 8,
+    marginBottom: 10,
+  },
+  imageItemNewfeed: {
+    width: '100%',
+    height: SIZES.width / 2 - 30,
+    resizeMode: 'cover',
+    borderRadius: 8,
+  },
+  imageTimeItemNewfeed: {
+    width: 15,
+    marginRight: 8,
+    height: 15,
+  },
+  titleItemNewfeed: {
+    fontWeight: '500',
+    fontSize: 13,
+    paddingVertical: 5,
   },
 });

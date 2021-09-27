@@ -10,17 +10,21 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 0.5,
     borderBottomColor: '#ddd',
+    justifyContent: 'space-evenly',
   },
   typeProduct: {
     height: 35,
     flex: 8,
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: COLORS.backgroundSection,
     marginLeft: 8,
     paddingHorizontal: 8,
     borderRadius: 5,
+  },
+  typeText: {
+    width: 200,
+    height: 20,
   },
   typeImage: {
     width: 20,
