@@ -162,6 +162,7 @@ const Home = ({navigation}) => {
           {dataNewfeed.map((val, index) => {
             return (
               <TouchableOpacity
+                key={index}
                 style={[
                   styles.headerNewfeedTouch,
                   selectNewfeed === index && styles.headerNewfeedTouchSelected,

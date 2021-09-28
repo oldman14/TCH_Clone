@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native';
 import {COLORS, SIZES} from '../../constants';
 
 export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   headerContainer: {
     paddingHorizontal: 6,
     height: 60,
@@ -85,5 +88,50 @@ export const styles = StyleSheet.create({
   contentContainer: {
     backgroundColor: COLORS.backgroundSection,
     flex: 1,
+  },
+  //style bottomsheetitem modal
+  itemBotSheetImage: {
+    width: 20,
+    height: 20,
+  },
+  itemBotSheetName: {
+    fontSize: SIZES.h2,
+    fontWeight: '500',
+  },
+  centerViewRow: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  itemBotSheetPrice: {
+    fontSize: SIZES.body3,
+    marginTop: 5,
+    marginBottom: 10,
+  },
+  itemBotSheetDes: {},
+  infoItemContainer: {
+    padding: 15,
+    backgroundColor: COLORS.white,
+    marginBottom: 8,
+  },
+  itemBotSheetViewBtnExit: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    backgroundColor: COLORS.darkgray,
+    padding: 3,
+    borderRadius: 50,
+  },
+  itemBotSheetBtnExit: {
+    width: 20,
+    height: 20,
+  },
+  contentContainer: {
+    backgroundColor: COLORS.backgroundSection,
+  },
+  itemContainer: {
+    padding: 6,
+    margin: 6,
+    backgroundColor: '#eee',
   },
 });

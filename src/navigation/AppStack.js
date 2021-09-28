@@ -8,6 +8,7 @@ import {COLORS} from '../constants/index';
 import {getHeaderTitle} from '@react-navigation/elements';
 import Header from '../component/Header';
 import Newfeeds from '../screen/Home/Newfeeds';
+import {useRoute} from '@react-navigation/core';
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -19,12 +20,7 @@ const MyBackButton = () => {
   );
 };
 const HomeStack = ({navigation, route}) => {
-  console.log('Lg navigation', route);
-  if (route.name && route.name != 'Home') {
-    navigation.setOptions({tabBarVisible: false});
-  } else {
-    navigation.setOptions({tabBarVisible: true});
-  }
+  console.log(navigation.route);
   return (
     <Stack.Navigator
       screenOptions={{
